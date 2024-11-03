@@ -194,17 +194,11 @@ Los siguientes diagramas representan los casos de interacción a los que el usua
 
 ## Máquina de estados finitos
 
-La máquina de estados finitos (FSM) del Tamagotchi comienza en el estado START, donde el simulador se inicializa. Desde allí, pasa al estado MAIN cuando el temporizador de pausa de la pantalla finaliza o si se detecta un reinicio con un contador específico. En MAIN, el usuario puede interactuar con el Tamagotchi eligiendo diferentes actividades. Si el usuario selecciona jugar, el sistema transiciona a PLAY, donde el Tamagotchi se entretiene. El juego puede ser interrumpido mediante un botón de cancelación, que lo regresa al estado principal. Similarmente, el Tamagotchi puede entrar en el estado SLEEP para descansar, y volver a MAIN al ser interrumpido o cuando haya terminado de dormir.
-
-Cuando el Tamagotchi tiene hambre, pasa al estado EAT para alimentarse, y al igual que en los demás estados de actividad, puede ser cancelado o finalizado, regresando siempre a MAIN. Si el Tamagotchi enferma, se puede iniciar la curación en el estado HEAL, siempre que el indicador lo permita. Una vez curado o si la curación es cancelada, el sistema retorna al estado principal. En caso de que el Tamagotchi muera, entra en el estado DEATH, del cual solo se puede salir mediante un reinicio completo. Este ciclo de vida se gestiona mediante las diversas transiciones y condiciones que activan las actividades, asegurando que el Tamagotchi pueda interactuar con el entorno de manera fluida hasta que finalice el juego o sea reiniciado.
-
 <p align="center">
   <img src=https://github.com/user-attachments/assets/3f63bbfb-6ce2-4bee-94b3-160a88e32143>
 </p>
 
 - Modo test
-
-Esta FSM implementa el modo de prueba del simulador Tamagotchi, donde se revisan los estados principales de la máquina de estados original. El modo de prueba comienza en el estado MAIN_REVIEW, y si el valor de prueba (test = 1) está activo, el sistema entra en un ciclo de revisión de los estados. A partir de ahí, transiciona a PLAY_REVIEW cuando el temporizador de prueba (test_timing) alcanza 6, permitiendo verificar el estado de juego. Luego, pasa a EAT_REVIEW para comprobar el comportamiento del estado de comer cuando test_timing = 5, y de forma similar avanza a SLEEP_REVIEW, donde se revisa el estado de dormir. Después, el sistema transita a HEAL_REVIEW, donde se verifica el proceso de curación, y posteriormente a DEATH_REVIEW para comprobar el estado de muerte del Tamagotchi. Tras completar la revisión en este último estado, la FSM retorna a MAIN_REVIEW para continuar el ciclo de pruebas. Este diseño permite verificar el correcto funcionamiento de cada estado clave del Tamagotchi bajo condiciones controladas.
 
 <p align="center">
   <img src=https://github.com/user-attachments/assets/2051398f-ba6d-4f86-a562-6030697d5557>
