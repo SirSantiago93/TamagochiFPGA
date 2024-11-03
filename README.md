@@ -244,14 +244,6 @@ Gtkwave:
   <img src=https://github.com/user-attachments/assets/439314e4-0a78-4442-b77c-c30e80e179a2>
 </p>
 
-- **_top_hcsr04_**
-
-Gtkwave:
-
-<p align="center">
-  <img src=https://github.com/user-attachments/assets/17ee4299-b1ab-4849-bed9-4ab149788957>
-</p>
-
 ## Analizador lógico
 
 - **_Pantalla oled_**
