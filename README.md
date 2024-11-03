@@ -110,8 +110,6 @@ La FPGA está programada para simular distintos estados de la mascota, basándos
 
   - **Action (Joystick)**: Permite al usuario luego de desplazarse por los indicadores decidir cual de las acciones realizar o repetir.
 
-  
-
 ### b. Sistema de Sensores
 
 Para integrar al Tamagotchi con el entorno real y enriquecer la experiencia de interacción, se incorporará al menos un sensor que modifique el comportamiento de la mascota virtual en respuesta a estímulos externos. Los sensores permitirán simular condiciones ambientales y actividades que afecten directamente el bienestar de la mascota.
@@ -173,7 +171,7 @@ Este diagrama muestra cómo el sistema responde a las variaciones en las necesid
 El diagrama también destaca que, si no se gestionan adecuadamente las necesidades, la variable disease podría activarse, lo que podría llevar al estado de death si no se toman medidas a tiempo. Además, se incluyen rutas alternativas como reset, que reinicia el ciclo, y la opción de realizar un test, un mecanismo que permite verificar ciertos estados del Tamagotchi antes de continuar.
 
   <p align="center">
-    <img src=https://github.com/user-attachments/assets/cc9e54d6-5540-4a3a-ab70-5e8e26670b56>
+    <img src=https://github.com/user-attachments/assets/d52cbc36-e9d2-4d9b-bb05-11b5b888fd23>
   </p>
 
 - **_Necesidades_**:
