@@ -206,10 +206,8 @@ Los siguientes diagramas representan los casos de interacción a los que el usua
 
 ## Diagrama del sistema
 
-El diagrama muestra el sistema del Tamagotchi compuesto por varios módulos que interactúan entre sí. El módulo de antirrebote gestiona las entradas de los botones para evitar lecturas erróneas, mientras que la FSM general (Máquina de Estados Finita) controla el flujo del simulador, con estados como "Load", "Save", "Decode" y "Execute", gestionando operaciones clave del Tamagotchi. Este se conecta a la memoria, donde se almacenan datos importantes del estado del simulador, y al módulo de tiempo, que podría manejar actualizaciones periódicas. En la parte del Datapath, el sistema incluye un sumador, un sumador complemento a 2 y un comparador, los cuales realizan cálculos y comparaciones de valores necesarios para la lógica interna, y utiliza un buffer (BR) para almacenar temporalmente los resultados. El sistema también interactúa con dispositivos externos: un sensor de ultrasonido que podría detectar la proximidad del usuario, un conversor A/D para manejar un joystick, y una pantalla OLED controlada por el módulo I2C, que muestra el estado del Tamagotchi. Todos los módulos están sincronizados mediante un reloj, y se comunican a través de buses de datos y señales de control, lo que permite la interacción fluida entre las entradas, el procesador interno y las salidas del sistema.
-
 <p align="center">
-  <img src=https://github.com/user-attachments/assets/ed58eb04-efe6-4d46-8d82-c19883ee6816>
+  <img src=https://github.com/user-attachments/assets/a695cbb7-be37-488a-9e90-27d82773a2c>
 </p>
 
 ## Simulaciones
