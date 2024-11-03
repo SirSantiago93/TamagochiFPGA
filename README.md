@@ -207,7 +207,7 @@ Los siguientes diagramas representan los casos de interacción a los que el usua
 ## Diagrama del sistema
 
 <p align="center">
-  <img src=https://github.com/user-attachments/assets/a695cbb7-be37-488a-9e90-27d82773a2c>
+    <img src=https://github.com/user-attachments/assets/cc9e54d6-5540-4a3a-ab70-5e8e26670b56>
 </p>
 
 ## Simulaciones
