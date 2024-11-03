@@ -1,4 +1,4 @@
-`include "src/ultrasonido/top_hcsr04.v"
+`include "src/ultrasonido/hcsr04.v"
 
 `timescale 1ns / 1ps // time scale - temporal precision
 
@@ -10,14 +10,16 @@ module hcsr04_tb;
     wire trigger;
 	wire level1 = 1;
 	wire level2 = 1;
+	wire level3 = 1;
 
-    top_hcsr04 UUT (
+    hcsr04 UUT (
         .clk(clk),
         .echo(echo),
         .enable(enable),
         .trigger(trigger),
         .level1(level1),
-        .level2(level2)
+        .level2(level2),
+        .level3(level3)
     );
 	
 	initial begin
@@ -33,18 +35,14 @@ module hcsr04_tb;
 		$dumpvars(-1, UUT);
 
 		clk = 0;
-        echo = 1;
-
-        #9999990
-        echo = 1;
-
-        #10
         echo = 0;
 
-        #100000
+        #10000
         echo = 1;
+        #70000
+        echo = 0;
 				
-		#70000000
+		#100000000
 		$finish;
 		
 	end

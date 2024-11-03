@@ -97,7 +97,8 @@ module i2c_ads1115 (
                         end
                         3: begin
                             addr_byte_out <= {addr_byte_in, read_write};
-                            register_byte_out <= register_byte_in;
+                            register_byte_out <= register_byte_in
+                    ;
                             data_byte_out <= data_byte_in;
                             bus_timing <= 0;
                             state <= ADDRESS;

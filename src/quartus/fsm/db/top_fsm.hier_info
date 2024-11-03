@@ -93,19 +93,19 @@ scl_display <> top_oled:UUT_oled.scl
 sda_display <> top_oled:UUT_oled.sda
 scl_converter <> top_ads1115:UTT_joystick.scl
 sda_converter <> top_ads1115:UTT_joystick.sda
-led_left << top_ads1115:UTT_joystick.led1
-led_middle << top_ads1115:UTT_joystick.led2
-led_right << top_ads1115:UTT_joystick.led3
-led_action << top_ads1115:UTT_joystick.led4
-led_reset << btn_reset.DB_MAX_OUTPUT_PORT_TYPE
-led_cancel << btn_cancel.DB_MAX_OUTPUT_PORT_TYPE
-led_test << btn_test.DB_MAX_OUTPUT_PORT_TYPE
-trigger << top_hcsr04:UTT_ultrasonido.trigger
-level1 << top_hcsr04:UTT_ultrasonido.level1
-level2 << top_hcsr04:UTT_ultrasonido.level2
-led_s1 << led_s1~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led_s2 << led_s2~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led_s3 << led_s3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_left <= top_ads1115:UTT_joystick.led1
+led_middle <= top_ads1115:UTT_joystick.led2
+led_right <= top_ads1115:UTT_joystick.led3
+led_action <= top_ads1115:UTT_joystick.led4
+led_reset <= btn_reset.DB_MAX_OUTPUT_PORT_TYPE
+led_cancel <= btn_cancel.DB_MAX_OUTPUT_PORT_TYPE
+led_test <= btn_test.DB_MAX_OUTPUT_PORT_TYPE
+trigger <= top_hcsr04:UTT_ultrasonido.trigger
+level1 <= top_hcsr04:UTT_ultrasonido.level1
+level2 <= top_hcsr04:UTT_ultrasonido.level2
+led_s1 <= led_s1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_s2 <= led_s2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led_s3 <= led_s3~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_fsm|top_ads1115:UTT_joystick

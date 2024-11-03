@@ -1,5 +1,5 @@
 Fitter report for top_fsm
-Fri Sep 20 03:20:53 2024
+Fri Sep 20 02:45:59 2024
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                      ;
 +------------------------------------+------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Sep 20 03:20:53 2024          ;
+; Fitter Status                      ; Successful - Fri Sep 20 02:45:59 2024          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; top_fsm                                        ;
 ; Top-level Entity Name              ; top_fsm                                        ;
@@ -157,19 +157,19 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.32        ;
+; Average used               ; 1.30        ;
 ; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   3.6%      ;
-;     Processor 3            ;   3.3%      ;
-;     Processor 4            ;   3.2%      ;
-;     Processor 5            ;   3.0%      ;
-;     Processor 6            ;   2.9%      ;
-;     Processor 7            ;   2.8%      ;
-;     Processor 8            ;   2.8%      ;
-;     Processors 9-12        ;   2.5%      ;
+;     Processor 2            ;   3.5%      ;
+;     Processor 3            ;   3.2%      ;
+;     Processor 4            ;   3.1%      ;
+;     Processor 5            ;   2.9%      ;
+;     Processor 6            ;   2.8%      ;
+;     Processor 7            ;   2.7%      ;
+;     Processor 8            ;   2.6%      ;
+;     Processors 9-12        ;   2.4%      ;
 +----------------------------+-------------+
 
 
@@ -1300,12 +1300,12 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Info (144001): Generated suppressed messages file D:/Personal/1-Universidad nacional/Semestre 6/Digital 1/Github/entrega-1-proyecto-grupo03-2024-1/src/quartus/fsm/output_files/top_fsm.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 6165 megabytes
-    Info: Processing ended: Fri Sep 20 03:20:53 2024
-    Info: Elapsed time: 00:00:12
+    Info: Peak virtual memory: 6173 megabytes
+    Info: Processing ended: Fri Sep 20 02:46:00 2024
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:04
 
 

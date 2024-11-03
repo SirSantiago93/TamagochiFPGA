@@ -2,29 +2,21 @@
 
 `timescale 1ns / 1ps // time scale - temporal precision
 
-module top_ads1115_tb;
+module ssd1306_display_tb;
 
 	reg clk;
-	reg sw;
 
 	// Bidirs
 	wire sda;
 	wire scl;
 
-	wire led1;
-	wire led2;
-	wire led3;
-	wire led4;
+	wire [15:0] read_bytesA0;
 
 	top_ads1115 UUT_top_ads1115 (
 		.clk(clk),
-		.sw(sw),
 		.sda(sda), 
 		.scl(scl),
-		.led1(led1),
-		.led2(led2),
-		.led3(led3),
-		.led4(led4)
+		.read_bytesA0(read_bytesA0)
 	);
 	
 	initial begin

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
 
-// DATE "09/20/2024 03:20:59"
+// DATE "09/20/2024 02:46:05"
 
 // 
 // Device: Altera EP4CE6E22C8 Package TQFP144
@@ -61,10 +61,10 @@ input 	btn_test;
 input 	btn_action;
 input 	echo;
 input 	enable;
-output 	scl_display;
-output 	sda_display;
-output 	scl_converter;
-output 	sda_converter;
+inout 	scl_display;
+inout 	sda_display;
+inout 	scl_converter;
+inout 	sda_converter;
 output 	led_left;
 output 	led_middle;
 output 	led_right;
